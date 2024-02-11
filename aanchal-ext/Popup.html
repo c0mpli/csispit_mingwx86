@@ -1,0 +1,206 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div class="main">
+      <h1>Stop Procastinating</h1>
+      <hr />
+      <span>
+        Current Blocked Sites:
+        <span style="color: #ff0100;">Youtube</span>
+        |
+        <span style="color: #0e8ef2;">Facebook</span>
+        |
+        <span style="color: #e50914;">Netflix</span>
+      </span>
+    </div>
+  </body>
+</html> -->
+<html lang="en">
+	<head>
+		<style>
+			/* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #EEF0F7;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    } */
+
+			.container {
+				background-color: #fff;
+				width: 600px;
+				height: 450px;
+				border-radius: 10px;
+				position: relative;
+
+				place-items: center;
+				line-height: 1.5;
+				box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+			}
+
+			/* 
+    .container::after {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(to bottom right, #FF9EC4, #FFD07E);
+      width: 900px;
+      height: 900px;
+      border-radius: 50%;
+      z-index: -1;
+    } */
+
+			.container-close {
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				background-color: #fff;
+				width: 45px;
+				height: 45px;
+				display: grid;
+				place-items: center;
+				font-size: 1.7rem;
+				color: #2e4052;
+				border-radius: 50%;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.164);
+				cursor: pointer;
+			}
+
+			/* .container img {
+				width: 250px;
+				height: 400px;
+				object-fit: cover;
+				object-position: center;
+			} */
+
+			.container-text {
+				padding: 0 3%;
+				/* padding: 10px 40px 10px 10px; */
+			}
+
+			.container-text h2 {
+				font-size: 1.2rem;
+				color: #1a2250;
+			}
+
+			.container-text p {
+				font-size: 14px;
+				color: black;
+				margin: 10px 0;
+			}
+
+			.container-text input,
+			.container-text button {
+				/* width: 30%; */
+				border: none;
+				padding: 10px 1rem;
+				border-radius: 10px;
+			}
+
+			.container-text input {
+				border: 2px solid #daddec;
+				margin: 5px 0 10px;
+				font-size: 1rem;
+				color: #656880;
+			}
+
+			.container-text button {
+				background-color: red;
+				display: block;
+				color: #fff;
+				font-size: 10px;
+				cursor: pointer;
+				box-shadow: 0 5px 20px #89caff94;
+				transition: box-shadow 0.3s ease-in-out;
+			}
+
+			.container-text button:hover {
+				box-shadow: none;
+			}
+
+			.container-text span {
+				display: block;
+				text-align: center;
+				margin: 20px 0 0;
+				color: #babdcb;
+				font-size: 12px;
+			}
+
+			/* Styles for blur filter */
+			img {
+				transition: filter 0.5s ease;
+			}
+
+			img.blurred {
+				filter: blur(10px);
+			}
+			.apnaimg {
+				width: 100px;
+				height: 100px;
+			}
+			.apnabox {
+				display: flex;
+				flex-direction: column;
+				width: 30%;
+			}
+		</style>
+		<title>Parental Control</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- <div class="container-close" id="close-window">&times;</div> -->
+			<!-- <img src="./popup.png" alt="image" /> -->
+			<div class="container-text">
+				<div
+					style="
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						gap: 2px;
+					"
+				>
+					<img
+						src="icon128.png"
+						alt="vikas logo"
+						style="width: 50px; height: 50px"
+					/>
+					<h2>VIKAS</h2>
+				</div>
+				<div
+					style="
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						gap: 2px;
+					"
+				>
+					<p>Hello, Jash!</p>
+					<button>Logout</button>
+				</div>
+				<p id="balance">Budget Remaining:</p>
+
+				<!-- <button type="button" id="form-submit">Login</button> -->
+				<span>Secure the Future</span>
+
+				<div id="list" style="display: flex; flex-wrap: wrap"></div>
+			</div>
+		</div>
+		<br />
+		<!-- Blur NSFW -->
+		<!-- <h1>NSFW Image Blur</h1>
+  <p>Toggle NSFW image blurring on/off:</p>
+  <label class="switch">
+    <input type="checkbox" id="toggleBlur">
+    <span class="slider round"></span>
+  </label> -->
+		<script src="popup.js"></script>
+	</body>
+</html>
